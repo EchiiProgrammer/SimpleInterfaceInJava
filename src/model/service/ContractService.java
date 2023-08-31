@@ -1,7 +1,6 @@
 package model.service;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 
 import model.entities.Contract;
 import model.entities.Installment;
@@ -10,10 +9,6 @@ public class ContractService {
 	
 	
 	private OnlinePaymentService onlinePaymentService;
-	Contract contract;
-	DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-	
-	
 	
 	
 	public ContractService(OnlinePaymentService onlinePaymentService) {
